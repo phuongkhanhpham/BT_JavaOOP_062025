@@ -2,20 +2,20 @@ package BaiTap1;
 
 public class NhanVien {
 
-    String name = "Khanh";
-    int age = 29;
-    String address = "HCM";
-    String role = "QA";
+    String name, address, role;
+    int age;
 
-    public void printInfo() {
-        System.out.println("Tên: " + name);
-        System.out.println("Tuổi: " + age);
-        System.out.println("Địa chỉ: " + address);
-        System.out.println("Chức vụ: " + role);
+    public NhanVien(String name, String address, String role, int age) {
+        this.name = name;
+        this.address = address;
+        this.role = role;
+        this.age = age;
     }
 
-    public static void main(String[] args) {
-        NhanVien nhanVien = new NhanVien();
-        nhanVien.printInfo();
+    public void showInfo() {
+        System.out.println("Tên: " + name);
+        System.out.println("Địa chỉ: " + address);
+        System.out.println("Chức vụ: " + role);
+        System.out.println("Tuổi: " + age);
     }
 }
